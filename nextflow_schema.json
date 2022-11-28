@@ -31,6 +31,13 @@
           "fa_icon": "fas fa-folder",
           "help_text": "Set this parameter to the path of the directory where you want the dumped files to be stored.",
           "pattern": ".+"
+        },
+        "pipeline_dir": {
+          "type": "string",
+          "description": "Pipeline directory.",
+          "fa_icon": "fas fa-code",
+          "help_text": "Set this parameter to the path of the directory containing the run_process.pl script.",
+          "pattern": ".+"
         }
       }
     }
