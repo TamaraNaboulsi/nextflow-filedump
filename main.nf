@@ -287,7 +287,7 @@ process GenomeDirectoryPaths {
   path 'dataflow_3.json'
 
   """
-  perl ${params.pipeline_dir}/run_process.pl -class='Nextflow::FileDump::DirectoryPaths' -dataflow='$x' -reg_conf=${params.registry} -data_category='genome' -analysis_types=${params.genome_types} -dump_dir=${params.dump_dir}
+  perl ${params.pipeline_dir}/run_process.pl -class='Nextflow::FileDump::DirectoryPaths' -dataflow='$x' -reg_conf=${params.registry} -data_category='genome' -analysis_types=${params.genome_types} -dump_dir=${params.dump_dir} -ftp_root=${params.ftp_root}
   """
 }
 
@@ -389,7 +389,7 @@ process GenesetDirectoryPaths {
 
   script:
   """
-  perl ${params.pipeline_dir}/run_process.pl -class='Nextflow::FileDump::DirectoryPaths' -dataflow='$x' -reg_conf=${params.registry} -data_category='geneset' -analysis_types=${params.geneset_types} -dump_dir=${params.dump_dir}
+  perl ${params.pipeline_dir}/run_process.pl -class='Nextflow::FileDump::DirectoryPaths' -dataflow='$x' -reg_conf=${params.registry} -data_category='geneset' -analysis_types=${params.geneset_types} -dump_dir=${params.dump_dir} -ftp_root=${params.ftp_root}
   """
 }
 
@@ -530,7 +530,7 @@ process RNASeqDirectoryPaths {
   path 'dataflow_3.json'
 
   """
-  perl ${params.pipeline_dir}/run_process.pl -class='Nextflow::FileDump::DirectoryPaths' -dataflow='$x' -reg_conf=${params.registry} -data_category='rnaseq' -analysis_types=${params.rnaseq_types} -dump_dir=${params.dump_dir}
+  perl ${params.pipeline_dir}/run_process.pl -class='Nextflow::FileDump::DirectoryPaths' -dataflow='$x' -reg_conf=${params.registry} -data_category='rnaseq' -analysis_types=${params.rnaseq_types} -dump_dir=${params.dump_dir} -ftp_root=${params.ftp_root}
   """
 }
 
