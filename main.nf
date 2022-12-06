@@ -273,7 +273,7 @@ process README {
   script:
   if (data_category == 'geneset' || data_category == 'genome')
     """
-    perl ${params.pipeline_dir}/run_process.pl -class='Nextflow::FileDump::README' -dataflow='$x'
+    perl ${params.pipeline_dir}/run_process.pl -class='Nextflow::FileDump::README' -dataflow='$x' -ftp_root=${params.ftp_root}
     """
 }
 
